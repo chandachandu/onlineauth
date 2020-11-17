@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Login Page - AUTHENTICATION</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body class="profile-bg">
+<a class="btn btn-light" href="{% url 'logout' %}" title="logout" style="    padding: 0;
+    border-radius: 50px;
+    overflow: hidden;position: absolute;right: 20px;top: 20px;"><img  style="height: 50px;" src="{% static 'images/logout.png' %}" class="img-circle img-thumbnail img-fluid"></a>
+    <div class="container my-5">
+        <div class="row m-auto shadow" style="min-height: 400px;max-width: 800px">
+            <div class="col-lg-4 col-md-4 m-0 p-0" style="background: url({% static 'images/profiebg.jpg' %});
+    background-size: cover;
+    background-position: bottom;border-bottom-left-radius: 10px;border-top-left-radius: 10px;overflow: hidden">
+
+                <div class="profile-content "style="z-index: 9">
+
+                    <h4 class="text-gray-900 mb-4 login-heading">
+                        <img src="{% static 'images/icon.jpg' %}" class="img-fluid img-rounded bg-light ">
+                    </h4>
+</div>
+
+            </div>
+             <div class="col-lg-8 col-md-8 bg-light m-0 p-4" style="border-bottom-right-radius: 10px;border-top-right-radius: 10px;">
+                 <div class="content">
+                     <h6>Profile Data</h6>
+                 <table class="table table-striped mt-4">
+                     <tbody>
+
+                      <tr>
+                         <td>Name</td>
+                         <td>{{ data.firstName }} {{ data.lastName }}</td>
+                     </tr>
+                       <tr>
+                         <td>Phone Number</td>
+                         <td>{{ data.phoneNumber }}</td>
+                     </tr>
+                       <tr>
+                         <td>Status</td>
+                         <td>{{ data.status }}</td>
+                     </tr>
+                       <tr>
+                         <td>Gender</td>
+                         <td>{{ data.gender }}</td>
+                     </tr>
+                      <tr>
+                         <td>Email ID</td>
+                         <td>{{ data.email }}</td>
+                     </tr>
+                       <tr>
+                         <td>Food Habit</td>
+                         <td>{{ data.foodHabit }}</td>
+                     </tr>
+                      <tr>
+                         <td>Country ID</td>
+                         <td>{{ data.countryID }}</td>
+                     </tr>
+
+                     </tbody>
+                 </table>
+
+                 </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

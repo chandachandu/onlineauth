@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.login-heading{
+font-family: 'Courgette', cursive;
+width: 100%;
+        z-index: 9;
+}
+.profile-bg{
+        background: #74ebd5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+.bg-img{
+
+      background-size: cover;
+    background-position: center center;
+      background-repeat: no-repeat;
+    }
+ form.user .form-control-user ,.btn-user{
+    font-size: 0.8rem;
+    border-radius: 10rem;
+    padding:0.7rem 1rem;
+}
+    .login-heading img{
+        border-radius: 50px;
+    max-height: 100px;
+        z-index: 99;
+}
+    .profile-content{
+        height: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #62a4da !important;
+    outline: 0;
+    box-shadow:none !important;
+}
+    .error_text{
+        font-size: 13px;
+    }
+
+    .overlay:after{
+        content: "";
+        position: absolute;
+        left:0;
+        top:0;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        opacity: 0.3;
+    }
+    .overlay-loader{
+            position: absolute;
+    top: 50%;
+    left: 40%;
+    opacity: 0.5;
+    }
+.profile-content:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
